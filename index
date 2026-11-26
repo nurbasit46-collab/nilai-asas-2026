@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Nilai ASAS 2026-1 - Guru SMPN 1 Sukowono</title>
+<style>
+  :root {
+    --primary: #0f766e;
+    --primary-dark: #115e59;
+    --secondary: #1e293b;
+    --bg: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Header Card */
+  .header-card {
+    background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);
+    color: #ffffff;
+    padding: 32px 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(15, 118, 110, 0.2);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .school-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+
+  .header-card h1 {
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .header-card p {
+    font-size: 0.98rem;
+    opacity: 0.92;
+  }
+
+  /* Info Banner */
+  .info-banner {
+    background: #ffffff;
+    border-left: 4px solid var(--primary);
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 0.92rem;
+    color: var(--text-main);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Link Cards */
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .link-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease;
+  }
+
+  .link-card:hover, .link-card:active {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.12);
+  }
+
+  .card-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .kelas-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .kelas-badge span:first-child {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .kelas-badge span:last-child {
+    font-size: 1.35rem;
+    line-height: 1.1;
+  }
+
+  .k7 { background: #dbeafe; color: #1e40af; }
+  .k8 { background: #dcfce7; color: #166534; }
+  .k9 { background: #fef3c7; color: #92400e; }
+
+  .card-info h2 {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 4px;
+  }
+
+  .card-info p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+
+  .btn-open {
+    background: var(--primary);
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+
+  .link-card:hover .btn-open {
+    background: var(--primary-dark);
+  }
+
+  @media (max-width: 480px) {
+    .link-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .btn-open {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .footer-note {
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header-card">
+    <div class="school-badge">SMPN 1 SUKOWONO</div>
+    <h1>PORTAL INPUT & CEK NILAI ASAS</h1>
+    <p>Tahun Pelajaran 2026/2027 • Semester Ganjil (2026-1)</p>
+  </div>
+
+  <!-- Info Banner -->
+  <div class="info-banner">
+    <strong>Petunjuk:</strong> Silakan Bapak/Ibu Guru memilih jenjang kelas di bawah ini untuk membuka aplikasi nilai ASAS.
+  </div>
+
+  <!-- Daftar Link Nilai -->
+  <div class="link-list">
+    <!-- Kelas 7 -->
+    <a href="https://script.google.com/macros/s/AKfycbwvEvdRzZBzXm7HQIKqzka_0rckQ_O8ddjBGohUQvwLgI9T69p1ogaaraTnBKN0ZrfG/exec" target="_blank" rel="noopener noreferrer" class="link-card">
+      <div class="card-left">
+        <div class="kelas-badge k7">
+          <span>Kelas</span>
+          <span>VII</span>
+        </div>
+        <div class="card-info">
+          <h2>Link Nilai ASAS 7 (2026-1)</h2>
+          <p>Akses pengolahan dan rekap nilai ASAS Kelas VII</p>
+        </div>
+      </div>
+      <div class="btn-open">Buka Aplikasi &rarr;</div>
+    </a>
+
+    <!-- Kelas 8 -->
+    <a href="https://script.google.com/macros/s/AKfycbxJE39OPLNQ5ZRHuCfEwn_qkunhcSYRa1B5FbLL-LoLWscNdVVKQyowjwijQIQ4kkZ3/exec" target="_blank" rel="noopener noreferrer" class="link-card">
+      <div class="card-left">
+        <div class="kelas-badge k8">
+          <span>Kelas</span>
+          <span>VIII</span>
+        </div>
+        <div class="card-info">
+          <h2>Link Nilai ASAS 8 (2026-1)</h2>
+          <p>Akses pengolahan dan rekap nilai ASAS Kelas VIII</p>
+        </div>
+      </div>
+      <div class="btn-open">Buka Aplikasi &rarr;</div>
+    </a>
+
+    <!-- Kelas 9 -->
+    <a href="https://script.google.com/macros/s/AKfycbwL4fe4_8rX5kfgUDJYi6-CCwenI5YnPToEJJ_VQxPoPs3UWHWOTljz-kymGBkBc1tQ4g/exec" target="_blank" rel="noopener noreferrer" class="link-card">
+      <div class="card-left">
+        <div class="kelas-badge k9">
+          <span>Kelas</span>
+          <span>IX</span>
+        </div>
+        <div class="card-info">
+          <h2>Link Nilai ASAS 9 (2026-1)</h2>
+          <p>Akses pengolahan dan rekap nilai ASAS Kelas IX</p>
+        </div>
+      </div>
+      <div class="btn-open">Buka Aplikasi &rarr;</div>
+    </a>
+  </div>
+
+  <div class="footer-note">
+    Kurikulum & Evaluasi • SMPN 1 Sukowono
+  </div>
+</div>
+
+</body>
+</html>
